@@ -1,3 +1,45 @@
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter  
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/sharp-Indent"]
+	path = .vim/bundle/sharp-Indent
+	url = git@github.com:vim-scripts/sharp-Indent.git
+[submodule ".vim/bundle/rainbow_parentheses.vim"]
+	path = .vim/bundle/rainbow_parentheses.vim
+	url = git@github.com:kien/rainbow_parentheses.vim.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule ".vim/bundle/tern_for_vim"]
+	path = .vim/bundle/tern_for_vim
+	url = git@github.com:marijnh/tern_for_vim.git
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-exchange"]
+	path = .vim/bundle/vim-exchange
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-misc"]
+	path = .vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule ".vim/bundle/vim-mkdir"]
+	path = .vim/bundle/vim-mkdir
+	url = git@github.com:pbrisbin/vim-mkdir.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule ".vim/bundle/vim-unbundle"]
+	path = .vim/bundle/vim-unbundle
+	url = git@github.com:sunaku/vim-unbundle.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule ".vim/bundle/Command-T"]
+	path = .vim/bundle/Command-T
+	url = git@github.com:wincent/command-t.git
 [submodule ".vim/bundle/vim-session"]
 	path = .vim/bundle/vim-session
 	url = git@github.com:xolox/vim-session.git
