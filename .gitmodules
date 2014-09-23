@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-session"]
 	path = .vim/bundle/vim-session
 	url = git@github.com:xolox/vim-session.git
+[submodule ".vim/bundle/vim-mustache-handlebars"]
+	path = .vim/bundle/vim-mustache-handlebars
+	url = git@github.com:mustache/vim-mustache-handlebars.git
