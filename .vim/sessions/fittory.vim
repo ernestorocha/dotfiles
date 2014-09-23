@@ -1,6 +1,6 @@
-" ~/.vim/sessions/fittory.vim:
+" ~/dotfiles/.vim/sessions/fittory.vim:
 " Vim session script.
-" Created by session.vim 2.6.4 on 23 September 2014 at 03:25:19.
+" Created by session.vim 2.6.4 on 23 September 2014 at 03:51:05.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -120,12 +120,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 18 - ((17 * winheight(0) + 30) / 60)
+let s:l = 17 - ((16 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
-normal! 0
+17
+normal! 017|
 tabnext 4
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
