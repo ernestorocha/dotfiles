@@ -273,6 +273,13 @@
 			<key>Text</key>
 			<string>F</string>
 		</dict>
+		<key>0x68-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x68-0x80000</key>
 		<dict>
 			<key>Action</key>
@@ -682,11 +689,11 @@
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.89198625087738037</real>
+				<real>0.99088543653488159</real>
 				<key>Green Component</key>
-				<real>0.89198625087738037</real>
+				<real>0.99088543653488159</real>
 				<key>Red Component</key>
-				<real>0.89198625087738037</real>
+				<real>0.99088543653488159</real>
 			</dict>
 			<key>Guid</key>
 			<string>B26EC3A1-40B8-43CB-B201-667FEC6169F1</string>
