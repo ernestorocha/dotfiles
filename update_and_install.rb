@@ -22,7 +22,15 @@ def install_dependencies
   DEPENDENCIES.each{ |d| run(d) }
 end
 
+def install_pathogen
+  mkdir = "mkdir .vim/autload"
+  cmd = "cp -f .vim/pathogen/autoload/* .vim/autoload/"
+  run(mkdir)
+  run(cmd)
+end
+
 
 
 update_submodules
 install_dependencies
+install_pathogen
