@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/vim-session"]
+	path = .vim/bundle/vim-session
+	url = git@github.com:xolox/vim-session.git
