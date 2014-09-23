@@ -1,1 +1,3 @@
 *.lock
+./vim/sessions/
+./vim/sessions/*
