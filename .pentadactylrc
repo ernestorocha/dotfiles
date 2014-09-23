@@ -1,0 +1,7 @@
+"hg7087
+
+loadplugins '\.(js|penta)$'
+group user
+set showtabline=never
+
+" vim: set ft=pentadactyl:
