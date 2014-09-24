@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <root>
 	<item>
-	<name>Shitf + arrows. Prev, next pause</name>
+	<name>FN + [ or ] for Music prev or next. FN + Space pause</name>
 	<identifier>remap.musicprevnext_to_arrows_and_modifier</identifier>
 	<autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::FN, ConsumerKeyCode::MUSIC_PREV</autogen>
-	<autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::FN, ConsumerKeyCode::MUSIC_NEXT </autogen>
+	<autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::FN, ConsumerKeyCode::MUSIC_NEXT</autogen>
+	<autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::FN, ConsumerKeyCode::MUSIC_PLAY</autogen>
 	</item>
 	<item>
-	<name>Command or FN + button4 or button5 - Music prev or next</name>
+	<name>Command or FN + button4 or button5 - Music prev or next. Middle for pause</name>
 	<identifier>remap.musicprevnext_to_modifier_button4_5</identifier>
 	<autogen>__KeyToKey__ PointingButton::BUTTON5, ModifierFlag::COMMAND_L, ConsumerKeyCode::MUSIC_NEXT</autogen>
 	<autogen>__KeyToKey__ PointingButton::BUTTON4, ModifierFlag::COMMAND_L, ConsumerKeyCode::MUSIC_PREV</autogen>
+	<autogen>__KeyToKey__ PointingButton::MIDDLE, ModifierFlag::COMMAND_L, ConsumerKeyCode::MUSIC_PLAY</autogen>
+	
 	<autogen>__KeyToKey__ PointingButton::BUTTON5, ModifierFlag::FN, ConsumerKeyCode::MUSIC_NEXT</autogen>
 	<autogen>__KeyToKey__ PointingButton::BUTTON4, ModifierFlag::FN, ConsumerKeyCode::MUSIC_PREV</autogen>
+	<autogen>__KeyToKey__ PointingButton::MIDDLE, ModifierFlag::FN, ConsumerKeyCode::MUSIC_PLAY</autogen>
 	</item>
 </root>
