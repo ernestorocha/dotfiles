@@ -3,7 +3,7 @@
 load "raspberrypi/install_vim.rb"
 
 GIT_UPDATE = "git submodule foreach git pull"
-
+USER_HOME = Dir.home
 SCRIPT_ROOT = File.expand_path File.dirname(__FILE__)
 
 LINKED_ARCHIVES = {
@@ -42,9 +42,9 @@ end
 def set_vim_files
   LINKED_ARCHIVES["vim"].each { |file|
     run "mv ~/#{file} ~/#{file}-bak"
-    Dir.dirch "~/"
+    Dir.chdir USER_HOME
     run "ln -s ~/dotfiles/#{file} #{file}"
-    Dir.dirch SCRIPT_ROOT
+    Dir.chdir SCRIPT_ROOT
   }
 end
 
