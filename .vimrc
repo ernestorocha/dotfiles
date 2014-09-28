@@ -42,3 +42,9 @@ set ruler
 "set background=dark
 "let g:solarized_termcolors=256
 "colorscheme solarized
+
+"Enable rainbow
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
