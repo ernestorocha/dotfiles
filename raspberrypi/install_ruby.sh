@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install -y git curl zlib1g-dev subversion
+sudo apt-get install -y git curl zlib1g-dev subversion ctags
 sudo apt-get install -y openssl libreadline6-dev git-core zlib1g libssl-dev
 sudo apt-get install -y libyaml-dev 
 sudo apt-get install -y libxml2-dev libxslt-dev
