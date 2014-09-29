@@ -10,7 +10,7 @@ LINKED_ARCHIVES = {
   "vim" => [".vim", ".vimrc", ".vim_runtime"]
 }
 
-DEPENDENCIES = []
+DEPENDENCIES = ["npm install -g node-inspector"]
 
 def run(command)
   IO.popen(command) { |io|
@@ -40,10 +40,15 @@ def update_pathogen
 end
 
 def set_vim_files
+  update_submodules
   LINKED_ARCHIVES["vim"].each { |file|
+    run "rm ~/#{file}-bak"
     run "mv ~/#{file} ~/#{file}-bak"
     Dir.chdir USER_HOME
     run "ln -s ~/dotfiles/#{file} #{file}"
+    Dir.chdir "~/dotfile/.vim/bundle/Command-T"
+    run "ruby extconf.rb"
+    run "make"
     Dir.chdir SCRIPT_ROOT
   }
 end
