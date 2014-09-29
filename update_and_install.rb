@@ -20,6 +20,7 @@ def run(command)
   end
 
   cmd.each { |line|
+    puts line
     IO.popen(line) { |io|
       io.each_char do |c|
         print c
