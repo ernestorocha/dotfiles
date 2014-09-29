@@ -53,7 +53,7 @@ def set_vim_files
     run "mv #{Dir.home}/#{file} #{Dir.home}/#{file}-bak"
     Dir.chdir USER_HOME
     run "ln -s #{Dir.home}/dotfiles/#{file} #{file}"
-    Dir.chdir "#{Dir.home}/dotfiles/.vim/bundle/Command-T"
+    Dir.chdir "#{Dir.home}/dotfiles/.vim/bundle/Command-T/ruby/command-t"
     run "ruby extconf.rb"
     run "make"
     Dir.chdir SCRIPT_ROOT
