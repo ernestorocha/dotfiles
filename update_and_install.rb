@@ -2,7 +2,7 @@
 
 load "raspberrypi/install_vim.rb"
 
-GIT_UPDATE = ["git submodule init", "git submodule update"]
+GIT_UPDATE = ["git submodule init", "git submodule update", "git submodule foreach git pull"]
 USER_HOME = Dir.home
 SCRIPT_ROOT = File.expand_path File.dirname(__FILE__)
 
@@ -15,6 +15,8 @@ DEPENDENCIES = ["npm install -g node-inspector"]
 def run(command)
   if !command.kind_of?(Array)
     cmd  = [command]
+  else
+    cmd = command
   end
 
   cmd.each { |line|
@@ -40,9 +42,7 @@ def install_dependencies
 end
 
 def update_pathogen
-  mkdir = "mkdir .vim/autload"
   cmd = "cp -f .vim/pathogen/autoload/* .vim/autoload/"
-  run(mkdir)
   run(cmd)
 end
 
