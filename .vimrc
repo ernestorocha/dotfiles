@@ -63,3 +63,6 @@ if has("win16") || has("win32")
 else
   let g:yankring_history_dir = '~/.vim/temp_dirs/'
 endif
+
+"Enable :lnext :lprev for syntastic
+let g:syntastic_always_populate_loc_list = 1
