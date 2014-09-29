@@ -2,7 +2,7 @@
 
 load "raspberrypi/install_vim.rb"
 
-GIT_UPDATE = ["git submodule init", "git submodule update", "git submodule foreach git pull"]
+GIT_UPDATE = ["git submodule init", "git submodule update"]
 USER_HOME = Dir.home
 SCRIPT_ROOT = File.expand_path File.dirname(__FILE__)
 
@@ -53,7 +53,7 @@ def set_vim_files
     run "mv ~/#{file} ~/#{file}-bak"
     Dir.chdir USER_HOME
     run "ln -s ~/dotfiles/#{file} #{file}"
-    Dir.chdir "~/dotfile/.vim/bundle/Command-T"
+    Dir.chdir "~/dotfiles/.vim/bundle/Command-T"
     run "ruby extconf.rb"
     run "make"
     Dir.chdir SCRIPT_ROOT
@@ -63,6 +63,8 @@ end
 if ARGV.empty?
   puts "commands:"
   puts "install:"
+  puts "update [pull]       - updates fetch submodules files. With 'pull' flag updates the submodule HEAD (latest code from submodule repository), useful for commiters"
+  puts "set                 - set up only script. Flags: [vim]."
 elsif ARGV[0] == "install"
   update_submodules
   os = `uname`.chomp
@@ -83,6 +85,7 @@ elsif ARGV[0] == "set"
   end
 elsif ARGV[0] == "update"
   update_submodules
+  run("git submodule foreach git pull") if(ARGV[1] == "pull")
 else
   puts "invalid command"
 end
