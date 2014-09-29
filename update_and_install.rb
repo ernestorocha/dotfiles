@@ -2,7 +2,7 @@
 
 load "raspberrypi/install_vim.rb"
 
-GIT_UPDATE = "git submodule foreach git pull"
+GIT_UPDATE = ["git submodule init", "git submodule update"]
 USER_HOME = Dir.home
 SCRIPT_ROOT = File.expand_path File.dirname(__FILE__)
 
@@ -13,11 +13,18 @@ LINKED_ARCHIVES = {
 DEPENDENCIES = ["npm install -g node-inspector"]
 
 def run(command)
-  IO.popen(command) { |io|
-    io.each_char do |c|
-      print c
-    end
+  if !command.kind_of?(Array)
+    cmd  = [command]
+  end
+
+  cmd.each { |line|
+    IO.popen(line) { |io|
+      io.each_char do |c|
+        print c
+      end
+    }
   }
+
 end
 
 def update_submodules
@@ -40,7 +47,6 @@ def update_pathogen
 end
 
 def set_vim_files
-  update_submodules
   LINKED_ARCHIVES["vim"].each { |file|
     run "rm ~/#{file}-bak"
     run "mv ~/#{file} ~/#{file}-bak"
@@ -57,10 +63,10 @@ if ARGV.empty?
   puts "commands:"
   puts "install:"
 elsif ARGV[0] == "install"
+  update_submodules
   os = `uname`.chomp
   if os == "Darwin"
     if ARGV.length < 2
-      update_submodules
       install_dependencies
     end
     #test for homebrew then install it first
