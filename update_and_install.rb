@@ -49,11 +49,11 @@ end
 
 def set_vim_files
   LINKED_ARCHIVES["vim"].each { |file|
-    run "rm ~/#{file}-bak"
-    run "mv ~/#{file} ~/#{file}-bak"
+    run "rm #{Dir.home}/#{file}-bak"
+    run "mv #{Dir.home}/#{file} #{Dir.home}/#{file}-bak"
     Dir.chdir USER_HOME
-    run "ln -s ~/dotfiles/#{file} #{file}"
-    Dir.chdir "~/dotfiles/.vim/bundle/Command-T"
+    run "ln -s #{Dir.home}/dotfiles/#{file} #{file}"
+    Dir.chdir "#{Dir.home}/dotfiles/.vim/bundle/Command-T"
     run "ruby extconf.rb"
     run "make"
     Dir.chdir SCRIPT_ROOT
