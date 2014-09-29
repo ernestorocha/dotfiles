@@ -39,7 +39,7 @@ def install_dependencies
   #dependency for syntastic - JS
   DEPENDENCIES.push('npm install -g jshint')
 
-  DEPENDENCIES.each{ |d| run(d) }
+  run(DEPENDENCIES)
 end
 
 def update_pathogen
@@ -49,8 +49,6 @@ end
 
 def set_vim_files
   LINKED_ARCHIVES["vim"].each { |file|
-    run "rm #{Dir.home}/#{file}-bak"
-    run "mv #{Dir.home}/#{file} #{Dir.home}/#{file}-bak"
     Dir.chdir USER_HOME
     run "ln -s #{Dir.home}/dotfiles/#{file} #{file}"
     Dir.chdir "#{Dir.home}/dotfiles/.vim/bundle/Command-T/ruby/command-t"
