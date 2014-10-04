@@ -66,3 +66,6 @@ endif
 
 "Enable :lnext :lprev for syntastic
 let g:syntastic_always_populate_loc_list = 1
+
+"Split diffs vertically
+set diffopt+=vertical
