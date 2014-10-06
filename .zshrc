@@ -57,3 +57,5 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:/usr/local/bin:/Users/ernestorocha/.rbenv/shims:/Users/ernestorocha/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/ernestorocha/.rbenv/shims:/Users/ernestorocha/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+alias cdgr='cd "$(git rev-parse --show-toplevel)"'
