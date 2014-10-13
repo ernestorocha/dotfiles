@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
+[submodule "switchaudio-osx"]
+	path = switchaudio-osx
+	url = git@github.com:ernestorocha/switchaudio-osx.git
