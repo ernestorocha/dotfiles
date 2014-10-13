@@ -20,4 +20,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0.5
 
 killall Dock
 
+defaults write com.apple.LaunchServices LSQuarantine -bool NO
+
+killall Finder
 
