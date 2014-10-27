@@ -452,9 +452,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 162 924 485 0 0 1440 900 </string>
+	<string>519 232 924 485 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 570 473 0 0 1440 900 </string>
+	<string>466 23 570 473 0 0 1920 1057 </string>
+	<key>NeverWarnAboutShortLivedSessions_B26EC3A1-40B8-43CB-B201-667FEC6169F1</key>
+	<true/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1922,6 +1924,8 @@
 			<string>/Users/ernestorocha</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1990,7 +1994,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-09-23T05:34:11Z</date>
+	<date>2014-10-12T12:35:46Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>

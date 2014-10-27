@@ -69,3 +69,6 @@ let g:syntastic_always_populate_loc_list = 1
 
 "Split diffs vertically
 set diffopt+=vertical
+
+"Disabling auto comment to all files
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
