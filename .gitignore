@@ -1,4 +1,5 @@
 *.lock
 .vim/sessions/
 .vim/temp_dirs/*
-.DS_Store
+**/.DS_Store
+*.DS_Store
