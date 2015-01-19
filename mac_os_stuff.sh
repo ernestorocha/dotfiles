@@ -24,3 +24,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool NO
 
 killall Finder
 
+# http://www.classicyuppie.com/what-crap-is-this-os-xs-mobilebackups/
+# What Crap Is This: OS X's MobileBackups
+sudo tmutil disablelocal 
