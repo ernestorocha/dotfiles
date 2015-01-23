@@ -61,3 +61,6 @@
 [submodule "switchaudio-osx"]
 	path = switchaudio-osx
 	url = git@github.com:ernestorocha/switchaudio-osx.git
+[submodule ".vim/bundle/vim-Jinja2-Syntax"]
+	path = .vim/bundle/vim-Jinja2-Syntax
+	url = git@github.com:Glench/Vim-Jinja2-Syntax.git
