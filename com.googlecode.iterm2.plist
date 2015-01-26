@@ -452,9 +452,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>519 232 924 485 0 0 1920 1080 </string>
+	<string>269 162 605 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>466 23 570 473 0 0 1920 1057 </string>
+	<string>-1 13 1425 864 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B26EC3A1-40B8-43CB-B201-667FEC6169F1</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1994,7 +1994,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-12T12:35:46Z</date>
+	<date>2015-01-25T07:30:23Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2041,7 +2041,11 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.0.0.20141103</string>
 </dict>
 </plist>
