@@ -18,6 +18,11 @@ au FileType python map <buffer> <leader>2 /def
 au FileType python map <buffer> <leader>C ?class 
 au FileType python map <buffer> <leader>D ?def 
 
+au FileType python set expandtab 
+au FileType python set nofoldenable  
+au FileType python setlocal tabstop=2
+au FileType python setlocal shiftwidth=2 
+
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
