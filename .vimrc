@@ -72,3 +72,6 @@ set diffopt+=vertical
 
 "Disabling auto comment to all files
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope = 0
