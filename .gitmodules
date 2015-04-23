@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+[submodule ".vim_runtime/sources_non_forked/vim-codereview"]
+	path = .vim_runtime/sources_non_forked/vim-codereview
+	url = git@github.com:codegram/vim-codereview.git
