@@ -15,6 +15,8 @@ defaults write com.apple.Dock autohide-delay -float 0.5
 #speed of the animation when the Dock slides onto the screen
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 
+#disable annoying alert bounce on dock
+defaults write com.apple.dock no-bouncing -bool TRUE
 #defaul
 #defaults delete com.apple.Dock autohide-time-modifier
 

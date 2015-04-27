@@ -59,3 +59,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:/Users/ernestorocha/.rbenv/shims:/Use
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 alias cdgr='cd "$(git rev-parse --show-toplevel)"'
+
+# fix for <C-CR> on terminal - http://stackoverflow.com/questions/13648237/ctrls-horizontal-split-not-working-with-command-t-in-vim
+stty start undef stop undef

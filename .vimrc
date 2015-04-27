@@ -76,4 +76,13 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:pymode_rope_lookup_project = 0
 let g:pymode_rope = 0
 
-nnoremap <silent> <c-k> :noh<CR>
+nnoremap <silent> <c-i> :noh<CR>
+
+"Set visualbell to disable bell when pressing esc in normal mode
+set vb
+
+
+"Autocolapse horizontal split
+set winheight=9
+set winminheight=9
+set winheight=9999
