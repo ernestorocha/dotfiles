@@ -73,3 +73,6 @@
 [submodule ".vim_runtime/sources_non_forked/patchreview-vim"]
 	path = .vim_runtime/sources_non_forked/patchreview-vim
 	url = git@github.com:junkblocker/patchreview-vim.git
+[submodule ".vim_runtime/sources_non_forked/vim-airline"]
+	path = .vim_runtime/sources_non_forked/vim-airline
+	url = git@github.com:bling/vim-airline.git
