@@ -62,3 +62,6 @@ alias cdgr='cd "$(git rev-parse --show-toplevel)"'
 
 # fix for <C-CR> on terminal - http://stackoverflow.com/questions/13648237/ctrls-horizontal-split-not-working-with-command-t-in-vim
 stty start undef stop undef
+
+export NVM_DIR="/Users/ernestorocha/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
