@@ -76,13 +76,19 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:pymode_rope_lookup_project = 0
 let g:pymode_rope = 0
 
-nnoremap <silent> <c-i> :noh<CR>
+nnoremap <silent> <LEADER>h :noh<CR>
 
 "Set visualbell to disable bell when pressing esc in normal mode
 set vb
 
 
 "Autocolapse horizontal split
-set winheight=9
-set winminheight=9
+set winheight=5
+set winminheight=5
 set winheight=9999
+
+"Config for unite.vim
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
+nnoremap <C-/> :<C-u>Unite -buffer-name=search -start-insert line<cr>

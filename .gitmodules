@@ -76,3 +76,6 @@
 [submodule ".vim_runtime/sources_non_forked/vim-airline"]
 	path = .vim_runtime/sources_non_forked/vim-airline
 	url = git@github.com:bling/vim-airline.git
+[submodule ".vim_runtime/sources_non_forked/unite-vim"]
+	path = .vim_runtime/sources_non_forked/unite-vim
+	url = git@github.com:Shougo/unite.vim.git
