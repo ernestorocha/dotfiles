@@ -91,4 +91,4 @@ set winheight=9999
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
-nnoremap <C-/> :<C-u>Unite -buffer-name=search -start-insert line<cr>
+nnoremap <C-f> :<C-u>Unite -buffer-name=search -start-insert line<cr>
