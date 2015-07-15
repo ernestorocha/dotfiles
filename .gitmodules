@@ -34,6 +34,7 @@
 [submodule ".vim/bundle/vim-unbundle"]
 	path = .vim/bundle/vim-unbundle
 	url = git@github.com:sunaku/vim-unbundle.git
+  ignore = untracked
 [submodule ".vim/bundle/Command-T"]
 	path = .vim/bundle/Command-T
 	url = git@github.com:wincent/command-t.git
@@ -52,12 +53,14 @@
 [submodule ".vim/bundle/yankring"]
 	path = .vim/bundle/yankring
 	url = git@github.com:vim-scripts/YankRing.vim.git
+  ignore = untracked
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
 [submodule "switchaudio-osx"]
 	path = switchaudio-osx
 	url = git@github.com:ernestorocha/switchaudio-osx.git
+  ignore = untracked
 [submodule ".vim/bundle/vim-Jinja2-Syntax"]
 	path = .vim/bundle/vim-Jinja2-Syntax
 	url = git@github.com:Glench/Vim-Jinja2-Syntax.git
@@ -70,6 +73,7 @@
 [submodule ".vim_runtime/sources_non_forked/patchreview-vim"]
 	path = .vim_runtime/sources_non_forked/patchreview-vim
 	url = git@github.com:junkblocker/patchreview-vim.git
+  ignore = untracked
 [submodule ".vim_runtime/sources_non_forked/vim-airline"]
 	path = .vim_runtime/sources_non_forked/vim-airline
 	url = git@github.com:bling/vim-airline.git
