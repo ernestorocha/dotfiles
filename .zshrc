@@ -45,26 +45,26 @@ plugins=(git vagrant pip brew meteor npm)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 alias vim="/usr/local/bin/vim"
 
-fpath=($HOME/.zsh/func $fpath)
-typeset -U fpath
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:/usr/local/bin:/Users/ernestorocha/.rbenv/shims:/Users/ernestorocha/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/ernestorocha/.rbenv/shims:/Users/ernestorocha/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+#fpath=($HOME/.zsh/func $fpath)
+#typeset -U fpath
+#export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+#export ANDROID_HOME=/usr/local/opt/android-sdk
 
 alias cdgr='cd "$(git rev-parse --show-toplevel)"'
 
 # fix for <C-CR> on terminal - http://stackoverflow.com/questions/13648237/ctrls-horizontal-split-not-working-with-command-t-in-vim
 stty start undef stop undef
 
-export NVM_DIR="/Users/ernestorocha/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/Users/ernestorocha/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
