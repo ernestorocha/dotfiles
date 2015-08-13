@@ -24,7 +24,7 @@
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_TOGGLE_AUDIO_OUTPUT</name>
     <url type="shell">
-      <![CDATA[    /Users/ernestorocha/dotfiles/switchaudio-osx/bin/Debug/AudioSwitcher -x   ]]>
+      <![CDATA[    $HOME/dotfiles/switchaudio-osx/bin/Debug/AudioSwitcher -x   ]]>
     </url>
   </vkopenurldef>
 
