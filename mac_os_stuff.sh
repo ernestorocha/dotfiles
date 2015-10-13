@@ -20,6 +20,9 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 #defaul
 #defaults delete com.apple.Dock autohide-time-modifier
 
+# Shows only open apps on dock
+defaults write com.apple.dock static-only -bool TRUE
+
 killall Dock
 
 defaults write com.apple.LaunchServices LSQuarantine -bool NO

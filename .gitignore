@@ -3,3 +3,4 @@
 .vim/temp_dirs/*
 **/.DS_Store
 *.DS_Store
+.vim_runtime/sources_non_forked/ack.vim/.netrwhist
