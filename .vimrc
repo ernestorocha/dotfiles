@@ -40,8 +40,8 @@ let g:rainbow_active = 1
 let g:rainbow_conf = {
 \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
 \   'ctermfgs': ['darkred', 'darkyellow', 'darkcyan', 'darkmagenta'],
-\   'operators': '_,_',
-\   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\   'operators': '_,\||_',
+\   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold', 'start=/''/ end=/''/ fold', 'start=/\"/ end=/\"/ fold'],
 \   'separately': {
 \       '*': {},
 \       'tex': {
