@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/sharp-Indent"]
 	path = .vim/bundle/sharp-Indent
 	url = git@github.com:vim-scripts/sharp-Indent.git
-[submodule ".vim/bundle/rainbow_parentheses.vim"]
-	path = .vim/bundle/rainbow_parentheses.vim
-	url = git@github.com:kien/rainbow_parentheses.vim.git
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git@github.com:ervandew/supertab.git
@@ -80,3 +77,6 @@
 [submodule ".vim_runtime/sources_non_forked/unite-vim"]
 	path = .vim_runtime/sources_non_forked/unite-vim
 	url = git@github.com:Shougo/unite.vim.git
+[submodule ".vim/bundle/rainbow"]
+	path = .vim/bundle/rainbow
+	url = git@github.com:luochen1990/rainbow.git
