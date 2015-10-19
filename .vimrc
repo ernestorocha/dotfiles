@@ -60,8 +60,8 @@ let g:rainbow_conf = {
 \   }
 \}
 
-au VimEnter * RainbowToggle
-au VimEnter * RainbowToggleOn
+au BufReadPre * RainbowToggle
+au BufReadPre * RainbowToggleOn
 
 
 """"""""""""""""""""""""""""""
