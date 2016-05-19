@@ -71,3 +71,7 @@ export EDITOR="$VISUAL"
 
 export GOPATH=$HOME/go-ws
 export PATH=$PATH:$GOPATH/bin
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
+export ANDROID_HOME="/Users/ernesto/Library/Android/sdk"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

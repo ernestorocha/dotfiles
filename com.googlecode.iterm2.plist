@@ -445,9 +445,9 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>382 463 605 485 0 0 1920 1057 </string>
+	<string>737 572 924 485 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 187 1439 867 0 0 1920 1057 </string>
+	<string>0 8 1900 1049 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_B26EC3A1-40B8-43CB-B201-667FEC6169F1</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1006,11 +1006,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>ProggyCleanTT 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>ProggyCleanTT 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1022,7 +1022,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -1166,7 +1166,7 @@
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -1917,10 +1917,16 @@
 			<string>/Users/ernestorocha</string>
 		</dict>
 	</array>
+	<key>NoSyncDisablePromotions</key>
+	<true/>
+	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>461294633.38811302</real>
+	<real>477756384.55899602</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>465617656.575773</real>
+	<real>479345412.36696202</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1985,11 +1991,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-10-04T02:14:15Z</date>
+	<date>2016-04-04T21:44:59Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2041,6 +2047,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
