@@ -80,3 +80,6 @@
 [submodule ".vim_runtime/sources_non_forked/vim-commentary"]
 	path = .vim_runtime/sources_non_forked/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule ".vim_runtime/sources_non_forked/vim-jsx"]
+	path = .vim_runtime/sources_non_forked/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
