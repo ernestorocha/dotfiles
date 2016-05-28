@@ -83,3 +83,6 @@
 [submodule ".vim_runtime/sources_non_forked/vim-jsx"]
 	path = .vim_runtime/sources_non_forked/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
