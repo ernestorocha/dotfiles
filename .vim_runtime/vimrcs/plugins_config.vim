@@ -67,5 +67,10 @@ nnoremap <silent> <leader>z :Goyo<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_javascript_checkers = ['eslint', 'flow']
+let g:syntastic_python_checkers=['pyflakes']
+
+" Point syntastic checker at locally installed `eslint` if it exists.
+if executable('node_modules/.bin/eslint')
+  let g:syntastic_javascript_eslint_exec = 'node_modules/.bin/eslint'
+endif
